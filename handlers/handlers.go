@@ -46,7 +46,7 @@ func ProteinRequirementHandler(w http.ResponseWriter,r *http.Request){
 func FoodHandler(w http.ResponseWriter,r *http.Request){
 	jsonFile, err:= os.Open("food.json")
 	Check(err)
-	bytes,_ := ioutilAll(jsonFile)
+	bytes,_ := ioutil.ReadAll(jsonFile)
 	w.Write(bytes)
 }
 func ProteinTrackerHandler(w http.ResponseWriter,r *http.Request){
