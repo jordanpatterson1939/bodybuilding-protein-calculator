@@ -1,0 +1,54 @@
+{
+    "foods":[
+        {
+            "name":"egg",
+            "quantity":"one large",
+            "proteinPerQty":6.28
+        },
+        {
+            "name":"sardine",
+            "quantity":"1 tin",
+            "proteinPerQty":23
+        },
+        {
+            "name":"tuna",
+            "quantity":"1 can",
+            "proteinPerQty":28
+        },
+        {
+            "name":"chicken-breast",
+            "quantity":"1 piece",
+            "proteinPerQty":31
+        },
+        {
+            "name":"chicken-leg",
+            "quantity":"1 piece",
+            "proteinPerQty":12.4
+        },
+        {
+            "name":"yogurt",
+            "quantity":"1 container (170g)",
+            "proteinPerQty":17
+        },
+        {
+            "name":"cheese",
+            "quantity":"1 slice (1 oz or 28g)",
+            "proteinPerQty":7
+        },
+        {
+            "name":"mackerel",
+            "quantity":"1 tin",
+            "proteinPerQty":18
+        },
+        {
+            "name":"fish-stick",
+            "quantity":"1 stick",
+            "proteinPerQty":3.1
+        },
+        {
+            "name":"oats",
+            "quantity":"100g",
+            "proteinPerQty":10.3
+        }
+    ]
+}
