@@ -35,10 +35,10 @@
                             <form id="req-form">
                                 <div class="form-row-container">
                                     <select id="unit">
-                                        <option value="lbs">Pound</option>
-                                        <option value="kg">Kilogram</option>
+                                        <option value="lbs">Pounds</option>
+                                        <option value="kg">Kilograms</option>
                                     </select>
-                                    <input id="weight" type="number" placeholder="Enter your weight here" step="0.01" required>
+                                    <input id="weight" type="number" placeholder="Enter your weight here" step="0.01" min="1" required>
                                     <button id="req-submit-btn" class="submit-btn"><i class="fas fa-calculator"></i></button>
                                 </div>
                             </form>
@@ -59,20 +59,35 @@
                         <div class="col-md-1"></div>
                         <div class="col-md-5">
                             <form id="tracker-form">
-                                    <select id="food-items"></select>
-                                    <input name="quantity" type="number" placeholder="Enter the amount of servings consumed"/>
-                                    <button>Add</button>
+                                    <div class="form-group">
+                                        <select id="food-items" class="form-control form-control-lg"></select>
+                                    </div>
+                                    <div class="form-group">
+                                        <input id="quantity" name="quantity" type="number" class="form-control form-control-lg" placeholder="Enter the amount of servings consumed" min="1" required/>
+                                    </div>
+                                    <div class="form-group text-center">
+                                        <button id="tracker-submit-btn" class="btn btn-dark btn-lg btn-block">Add <i class="fas fa-plus"></i></button>
+                                    </div>
                             </form>
                         </div>
-                        <div class="col-md-4">
+                        <div class="col-md-4 text-center">
                             <p id="response2" class="response-text">
                             </p>
+                            <button id="reset-btn" class="btn btn-light btn-lg">Reset</button>
                         </div>
                         <div class="col-md-2"></div>
                     </div>
                 </div>
             </div>
-            <div class="footer"></div>
+            <div class="container-fluid footer">
+                <div class="row">
+                    <div class="col-md-3"></div>
+                    <div class="col-md-6">
+                        <p class="footer-text">Bodybuilding-calc &copy; 2021</p>
+                    </div>
+                    <div class="col-md-3"></div>
+                </div>
+            </div>
         </div>
     </body>
     <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>

@@ -13,6 +13,7 @@ func main(){
 	r.HandleFunc("/",handlers.AppHandler)
 	r.HandleFunc("/daily-protein-requirement",handlers.ProteinRequirementHandler).Methods("POST")
 	r.HandleFunc("/food-list",handlers.FoodHandler)
+	r.HandleFunc("/protein-amount",handlers.ProteinTrackerHandler).Methods("POST")
 	r.PathPrefix("/static/").Handler(http.StripPrefix("/static/",http.FileServer(http.Dir("static"))))
 	fmt.Println("Go to http://localhost:6060")
 	err := http.ListenAndServe("localhost:6060",r)

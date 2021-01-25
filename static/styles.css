@@ -70,12 +70,14 @@ font-family: 'Arvo', serif;
 .footer{
     background-color: rgb(27, 26, 26);
     min-height: 10vh;
+    padding-top:28px;
 }
 #req{
     background-color:rgb(255, 232, 232);
 }
 #tracker{
-    background-color:rgb(226, 175, 255);
+    background-color:rgb(185, 253, 255);
+    background-color: rgb(212, 255, 147);
 }
 #req-submit-btn{
     padding:10px;
@@ -146,7 +148,10 @@ font-family: 'Arvo', serif;
     padding:15px;
 }
 .sub-h{
-    font-family: 'Caveat', cursive;
+    /* font-family: 'Anton', sans-serif; */
+    font-family: 'Gorditas', cursive;
+    /* font-family: 'Potta One', cursive; */
+    /* font-family: 'Arvo', serif; */
     text-align: center;
 }
 .sub-h-container{
@@ -158,7 +163,7 @@ font-family: 'Arvo', serif;
 }
 .response-text{
     font-size:25px;
-    margin-top:50px;
+    margin-top:35px;
     color:rgb(124, 124, 124);
     font-family: 'Arvo', serif;
     font-weight: bold;
@@ -167,9 +172,26 @@ font-family: 'Arvo', serif;
 #response2{
     color:rgb(95, 95, 95);
 }
+
+#tracker-form{
+    margin-top:30px;
+}
+.form-div{
+    margin-top:40px;
+}
+/* #tracker-form .fas{
+    color:rgb(86, 86, 86);
+} */
+.footer-text{
+    text-align:center;
+    color:#fff;
+}
 @media only screen and (min-width:1200px){
     .response-text{
         font-size:35px;
         margin-top:60px;
+    }
+    #tracker-form{
+        margin-top:80px;
     }
 }
