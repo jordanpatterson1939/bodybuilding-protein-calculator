@@ -1,10 +1,16 @@
 $(document).ready(function(){
     let reqEndpoint = '/daily-protein-requirement';
     let foodListEndpoint = "/food-list";
-    let response2Template = `You have consumed <h1>20g</h1> so far for today.`;
+    let total = 0;
+    let response2Template = `You have consumed <h1>${total} g</h1> so far for today.`;
+    
 
-    $.get(foodListEndpoint,function(data,status){
-        alert("Data: "+data+"\nStatus: "+status);
+    $.getJSON(foodListEndpoint,function(data,status){
+        let items = data.foods;
+        let dropdown = $('#food-items');
+        $.each(items,function(){
+            dropdown.append($("<option />").val(this.name).text(this.name+" - "+this.quantity));
+        });
     });
 
     $('#response2').html(response2Template);
