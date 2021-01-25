@@ -44,7 +44,7 @@ func ProteinRequirementHandler(w http.ResponseWriter,r *http.Request){
 	w.Write([]byte(proteinRequired))
 }
 func FoodHandler(w http.ResponseWriter,r *http.Request){
-	jsonFile, err:= os.Open("food.json")
+	jsonFile, err:= os.Open("./food.json")
 	Check(err)
 	bytes,_ := ioutil.ReadAll(jsonFile)
 	w.Write(bytes)

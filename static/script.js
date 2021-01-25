@@ -1,6 +1,6 @@
 $(document).ready(function(){
     let reqEndpoint = '/daily-protein-requirement';
-    let foodListEndpoint = "/food list";
+    let foodListEndpoint = "/food-list";
     let response2Template = `You have consumed <h1>20g</h1> so far for today.`;
 
     $.get(foodListEndpoint,function(data,status){
